@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.log
+.env
+.DS_Store
+coverage/
+.pytest_cache/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.tar.gz

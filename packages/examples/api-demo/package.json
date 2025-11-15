@@ -1,0 +1,21 @@
+{
+  "name": "webx403-api-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "webx403-server": "*",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

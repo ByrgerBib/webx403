@@ -1,0 +1,57 @@
+{
+  "name": "webx403-client",
+  "version": "1.0.0",
+  "description": "WebX403 Client SDK - Seamless HTTP-native Solana wallet authentication for web3 applications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "solana",
+    "wallet",
+    "authentication",
+    "web3",
+    "http",
+    "403",
+    "challenge-response",
+    "ed25519",
+    "decentralized",
+    "crypto"
+  ],
+  "author": "WebX403 Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ByrgerBib/webx403.git",
+    "directory": "packages/ts-client"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "bs58": "^5.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  }
+}

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "webx403"
+version = "1.0.0"
+description = "WebX403 Python Server SDK - HTTP-native web3 authentication middleware for FastAPI"
+authors = ["WebX403 Contributors"]
+repository = "https://github.com/ByrgerBib/webx403"
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.0"
+pydantic = "^2.5.0"
+base58 = "^2.1.1"
+pynacl = "^1.5.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.3"
+httpx = "^0.25.2"
+pytest-asyncio = "^0.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
